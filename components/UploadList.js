@@ -11,6 +11,12 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 export default function UploadList() {
   const [medias, setMedias] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  // const onBuffer = () => {
+  //   console.log('onBuffer');
+  //   setLoading(true);
+  // };
 
   useEffect(() => {
     getAllMedias();

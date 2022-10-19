@@ -26,7 +26,6 @@ export default function UploadList() {
       })
       .catch(error => {
         setMedias([]);
-        console.log(error);
         alert('Error happened!');
       });
   };
@@ -37,7 +36,6 @@ export default function UploadList() {
         return (
           <View style={{flex: 1}} key={x._id}>
             {x.videos.map(y => {
-              console.log(y, 'yyy');
               return (
                 <View style={{flex: 1}} key={x._id}>
                   <Video

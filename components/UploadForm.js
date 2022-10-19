@@ -56,7 +56,7 @@ export default function UploadForm() {
         alert('Video Uploaded');
       })
       .catch(err => {
-        console.log(err);
+        alert('Error happened!');
       });
   };
 
